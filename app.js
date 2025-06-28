@@ -23,6 +23,10 @@ app.use(express.json());
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("✅ Backend is live!");
+});
+
 //API Routes
 app.use("/api/auth", userRouter);
 app.use("/api/questions", questionRouter); //changed to /api/questions for testing
