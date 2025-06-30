@@ -12,7 +12,7 @@ const port = process.env.PORT;
 // ✅ Middlewares
 app.use(
   cors({
-    origin: "https://evangadi-forum-frontend.hostinger.app", 
+    origin: "https://evangadiforumnardos.com",
     credentials: true,
   })
 );
